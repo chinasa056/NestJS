@@ -1,4 +1,8 @@
+import * as dotenv from 'dotenv';
+dotenv.config();
 
-export default {
-    mongoURI: 'mongodb+srv://Express_Buy:express@practicing-mongoose.4kz9n.mongodb.net/first-nestjs-project',
-}
+const config = {
+  mongoURI: process.env.MONGO_URI,
+};
+
+export default config;
